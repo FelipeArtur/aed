@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Entregas>
+  <Entrega>
+         <Cod>3</Cod>
+         <Descr>ERP</Descr>
+         <Custo>100000,00</Custo>
+  </Entrega>
+  <Entrega>
+        <Cod>8</Cod>
+        <Descr>CRM</Descr>
+        <Custo>150000,00</Custo>
+  </Entrega>
+  <Entrega>
+          <Cod>6</Cod>
+          <Descr>BI</Descr>
+          <Custo>70000,00</Custo>
+   </Entrega>
+   <Entrega>
+         <Cod>2</Cod>
+         <Descr>WMS</Descr>
+         <Custo>90000,00</Custo>
+   </Entrega>
+   <Entrega>
+         <Cod>16</Cod>
+         <Descr>SO</Descr>
+         <Custo>10000,00</Custo>
+   </Entrega>
+   <Entrega>
+         <Cod>4</Cod>
+         <Descr>RH</Descr>
+         <Custo>15000,00</Custo>
+   </Entrega>
+   <Entrega>
+         <Cod>20</Cod>
+         <Descr>Contabilidade</Descr>
+         <Custo>5000,00</Custo>
+   </Entrega>
+   <Entrega>
+         <Cod>25</Cod>
+         <Descr>E-Commerce</Descr>
+         <Custo>9000,00</Custo>
+   </Entrega>
+   <Entrega>
+        <Cod>12</Cod>
+        <Descr>Embarcado</Descr>
+        <Custo>30000,00</Custo>
+   </Entrega>
+   <Entrega>
+         <Cod>99</Cod>
+         <Descr>Suite</Descr>
+         <Custo>7500,00</Custo>
+   </Entrega>
+</Entregas>
+
