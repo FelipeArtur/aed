@@ -25,10 +25,10 @@ typedef struct{
 	FILA *filanormal;
 }FILA_DE_PRIORIDADE;
 
-FILA* cria_fila(){ // ela irá alocar um espaço na memória;
+FILA* cria_fila(){ // ela irÃ¡ alocar um espaÃ§o na memÃ³ria;
 	FILA *fi = (FILA*) malloc(sizeof(FILA));
-	if(fi != NULL){ // Deu certo a alocação
-		fi->fim = NULL;  // Faz o ponteiro apontar para NULL, ou seja, a fila está vazia
+	if(fi != NULL){ // Deu certo a alocaÃ§Ã£o
+		fi->fim = NULL;  // Faz o ponteiro apontar para NULL, ou seja, a fila estÃ¡ vazia
 		fi->ini = NULL;
 	}
 	return fi;
@@ -42,17 +42,17 @@ int fila_vazia(FILA *f){
 int enfileira(FILA *f, Renas r){ 
 	if(f==NULL) return 0;
 	NO *novo_no = (NO*)malloc(sizeof(NO));
-	if(novo_no==NULL) return 0; // Não alocou memória
-	// atribuir os valores para o novo nó;
+	if(novo_no==NULL) return 0; // NÃ£o alocou memÃ³ria
+	// atribuir os valores para o novo nÃ³;
 	novo_no->dados = r;
 	novo_no->prox = NULL;
-	if(f->ini==NULL){ // Fila vazia, vamos inserir no início
+	if(f->ini==NULL){ // Fila vazia, vamos inserir no inÃ­cio
 		f->ini = novo_no;
 		f->fim = novo_no;
 	}else{
 		f->fim->prox = novo_no;
 		f->fim = novo_no;
-		//Gerar as condiçoes a partir daqui 
+		//Gerar as condiÃ§oes a partir daqui 
 	}
 	return 1;
 }
@@ -66,9 +66,9 @@ int desenfileira(FILA *f, Renas *r){
 	r->idade = aux->dados.idade;
 	r->altura = aux->dados.altura;
 	
-	// Desloca o inicio fazendo-o apontar para o próximo nó
+	// Desloca o inicio fazendo-o apontar para o prÃ³ximo nÃ³
 	f->ini = aux->prox;
-	// Libera o nó desempilhado
+	// Libera o nÃ³ desempilhado
 	free(aux);
 
 	return 1;

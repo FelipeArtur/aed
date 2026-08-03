@@ -15,10 +15,10 @@ typedef struct no{
 
 typedef NO* LISTA; // Ponteiro para um Ponteiro
 
-LISTA* cria_lista(){ // ela ir· alocar um espaÁo na memÛria;
+LISTA* cria_lista(){ // ela ir√° alocar um espa√ßo na mem√≥ria;
 	LISTA *li = (LISTA*) malloc(sizeof(LISTA));
-	if(li != NULL) // Deu certo a alocaÁ„o
-		*li = NULL;  // Faz o ponteiro apontar para NULL, ou seja, a lista est· vazia
+	if(li != NULL) // Deu certo a aloca√ß√£o
+		*li = NULL;  // Faz o ponteiro apontar para NULL, ou seja, a lista est√° vazia
 	return li;
 }	
 
