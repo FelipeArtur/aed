@@ -23,7 +23,7 @@ Estruturas encadeadas e os primeiros problemas de julgamento automático.
 
 Estruturas de busca em disco e ordenação que não cabe na memória.
 
-### `primeira-unidade/atividade-pontuada-1/` — ordenação externa
+### `primeira-unidade/atividade-pontuada-1/`: ordenação externa
 
 O trabalho mais longo do repositório. Ordena um volume de dados maior que a
 memória disponível, usando **intercalação balanceada** entre seis arquivos: três
@@ -31,14 +31,14 @@ de entrada e três de saída, alternando a cada passada até tudo ficar ordenado
 
 `v0.c` a `v6.c` são as versões sucessivas, do esqueleto que só criava os arquivos
 até a implementação completa. `ExternalOrder.c` é a versão final e é a que vale
-ler — as outras ficam como registro de como o algoritmo foi crescendo.
+ler. As outras ficam como registro de como o algoritmo foi crescendo.
 
-### `segunda-unidade/` — árvore Trie
+### `segunda-unidade/`: árvore Trie
 
 Árvore de prefixos com 26 filhos por nó, um por letra. Cada nó guarda a letra e
 uma marca de fim de palavra.
 
-### `terceira-unidade/` — árvore B
+### `terceira-unidade/`: árvore B
 
 Árvore B de ordem 2 (até 4 chaves por página), que lê os registros de
 `produtos.xml` e indexa por código de produto. É a estrutura que os bancos de
@@ -57,6 +57,6 @@ Nenhum arquivo tem build system; cada um compila sozinho:
 gcc -o programa AED2/primeira-unidade/atividade-pontuada-1/ExternalOrder.c
 ```
 
-Boa parte usa `system("cls")` e `system("pause")`, que só funcionam no Windows —
-foi onde a disciplina rodou. Em Linux compila e roda, mas essas chamadas falham
+Boa parte usa `system("cls")` e `system("pause")`, que só funcionam no Windows,
+onde a disciplina rodou. Em Linux compila e roda, mas essas chamadas falham
 silenciosamente.
